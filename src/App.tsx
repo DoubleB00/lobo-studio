@@ -410,12 +410,22 @@ function App() {
       {/* Art Portfolio Section */}
       <section id="portfolio" className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">Featured Work</h2>
-            <p className="text-xl text-gray-300">Bold visuals with vivid colors and strong contrast.</p>
+            <p className="text-xl text-gray-300 mb-6">Bold visuals with vivid colors and strong contrast.</p>
+            <p className="text-gray-400 mb-8">Browse prints & originals available now</p>
+            <a
+              href="https://www.etsy.com/shop/L0B0StudioDesigns?dd_referrer=#items"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg font-semibold text-lg hover:from-orange-600 hover:to-red-600 transition-all shadow-lg"
+            >
+              <span>Shop My Work</span>
+              <ChevronRight size={20} />
+            </a>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {[
               { color: 'from-orange-500 to-red-600', name: 'Sunset Series' },
               { color: 'from-blue-500 to-cyan-500', name: 'Ocean Dreams' },
@@ -446,16 +456,8 @@ function App() {
       {/* Video Editing Section */}
       <section id="video" className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="order-2 md:order-1">
-              <div className="aspect-video bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-2xl overflow-hidden relative">
-                <div className="absolute inset-0 bg-gray-900/80 flex items-center justify-center">
-                  <Video size={80} className="text-white" />
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 md:order-2">
               <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6">
                 <span className="text-blue-500 font-semibold">Video Editing</span>
               </div>
@@ -499,6 +501,40 @@ function App() {
                 <span>Ask About Editing</span>
                 <ChevronRight size={20} />
               </button>
+            </div>
+
+            <div className="order-1 md:order-2">
+              <div className="aspect-video bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-2xl overflow-hidden relative p-1">
+                <div className="w-full h-full bg-gray-900 rounded-xl flex items-center justify-center">
+                  <Video size={80} className="text-gray-600" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <h3 className="text-3xl font-bold text-center mb-8">Video Portfolio</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover-lift">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://drive.google.com/file/d/1WjGkK1ZNe6DymTBZqNkIUy93Xc0A4Q0A/preview"
+                    className="w-full h-full"
+                    allow="autoplay"
+                    title="Video Portfolio 1"
+                  ></iframe>
+                </div>
+              </div>
+              <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover-lift">
+                <div className="aspect-video">
+                  <iframe
+                    src="https://drive.google.com/file/d/1aTD8UbnjGf_we4eAmPA6tw1LgtZL5c2I/preview"
+                    className="w-full h-full"
+                    allow="autoplay"
+                    title="Video Portfolio 2"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
