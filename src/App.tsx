@@ -515,24 +515,50 @@ function App() {
           <div className="mt-16">
             <h3 className="text-3xl font-bold text-center mb-8">Video Portfolio</h3>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover-lift">
-                <div className="aspect-video">
-                  <iframe
-                    src="https://drive.google.com/file/d/1WjGkK1ZNe6DymTBZqNkIUy93Xc0A4Q0A/preview"
-                    className="w-full h-full"
-                    allow="autoplay"
-                    title="Video Portfolio 1"
-                  ></iframe>
+              <div className="space-y-3">
+                <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover-lift">
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      src="https://drive.google.com/file/d/1WjGkK1ZNe6DymTBZqNkIUy93Xc0A4Q0A/preview"
+                      className="absolute top-0 left-0 w-full h-full"
+                      allow="autoplay"
+                      style={{ border: 'none', borderRadius: '12px' }}
+                      title="Video Portfolio 1"
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <a
+                    href="https://drive.google.com/file/d/1WjGkK1ZNe6DymTBZqNkIUy93Xc0A4Q0A/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-400 hover:text-blue-500 transition-colors"
+                  >
+                    Having trouble? Watch here
+                  </a>
                 </div>
               </div>
-              <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover-lift">
-                <div className="aspect-video">
-                  <iframe
-                    src="https://drive.google.com/file/d/1aTD8UbnjGf_we4eAmPA6tw1LgtZL5c2I/preview"
-                    className="w-full h-full"
-                    allow="autoplay"
-                    title="Video Portfolio 2"
-                  ></iframe>
+              <div className="space-y-3">
+                <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover-lift">
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      src="https://drive.google.com/file/d/1aTD8UbnjGf_we4eAmPA6tw1LgtZL5c2I/preview"
+                      className="absolute top-0 left-0 w-full h-full"
+                      allow="autoplay"
+                      style={{ border: 'none', borderRadius: '12px' }}
+                      title="Video Portfolio 2"
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <a
+                    href="https://drive.google.com/file/d/1aTD8UbnjGf_we4eAmPA6tw1LgtZL5c2I/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-400 hover:text-blue-500 transition-colors"
+                  >
+                    Having trouble? Watch here
+                  </a>
                 </div>
               </div>
             </div>
