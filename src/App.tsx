@@ -516,14 +516,15 @@ function App() {
             <h3 className="text-3xl font-bold text-center mb-12">Video Portfolio</h3>
             <div className="grid md:grid-cols-2 gap-10">
               <div className="space-y-4">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black">
-                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                  <div style={{ padding: '57.14% 0 0 0', position: 'relative' }}>
                     <iframe
                       src="https://player.vimeo.com/video/1180663230?badge=0&autopause=0&player_id=0&app_id=58479"
-                      className="absolute top-0 left-0 w-full h-full"
                       frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      title="Video Edit 1"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                      title="Video"
                     ></iframe>
                   </div>
                 </div>
@@ -532,14 +533,15 @@ function App() {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black">
-                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                  <div style={{ padding: '56.34% 0 0 0', position: 'relative' }}>
                     <iframe
                       src="https://player.vimeo.com/video/1180663729?badge=0&autopause=0&player_id=0&app_id=58479"
-                      className="absolute top-0 left-0 w-full h-full"
                       frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      title="Video Edit 2"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                      title="Video_1"
                     ></iframe>
                   </div>
                 </div>
