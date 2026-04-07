@@ -516,37 +516,33 @@ function App() {
             <h3 className="text-3xl font-bold text-center mb-12">Video Portfolio</h3>
             <div className="grid md:grid-cols-2 gap-10">
               <div className="space-y-4">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <div style={{ padding: '57.14% 0 0 0', position: 'relative' }}>
-                    <iframe
-                      src="https://player.vimeo.com/video/1180663230?badge=0&autopause=0&player_id=0&app_id=58479"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                      title="Video"
-                    ></iframe>
-                  </div>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/H05j3Q-uqAM"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className="px-2">
-                  <h4 className="text-lg font-semibold text-gray-200">Creative Edit</h4>
+                  <h4 className="text-lg font-semibold text-gray-200">Creative Project Showcase</h4>
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <div style={{ padding: '56.34% 0 0 0', position: 'relative' }}>
-                    <iframe
-                      src="https://player.vimeo.com/video/1180663729?badge=0&autopause=0&player_id=0&app_id=58479"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                      title="Video_1"
-                    ></iframe>
-                  </div>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/lC9hllAodRA"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className="px-2">
-                  <h4 className="text-lg font-semibold text-gray-200">Promo Clip</h4>
+                  <h4 className="text-lg font-semibold text-gray-200">Video Editing Sample</h4>
                 </div>
               </div>
             </div>
