@@ -515,36 +515,47 @@ function App() {
           <div className="mt-16">
             <h3 className="text-3xl font-bold text-center mb-12">Video Portfolio</h3>
             <div className="grid md:grid-cols-2 gap-10">
-              <div className="space-y-4">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video">
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded-2xl"
-                    src="https://www.youtube.com/embed/H05j3Q-uqAM"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
+              <a
+                href="https://youtu.be/H05j3Q-uqAM?si=OrioKzAZPZG90kxq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 border-2 border-blue-500/30 rounded-2xl overflow-hidden hover-lift cursor-pointer transition-all">
+                  <div className="aspect-video bg-gray-800 flex items-center justify-center relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
+                    <Video size={80} className="text-blue-400 relative z-10" />
+                  </div>
+                  <div className="p-6 bg-gray-800/50">
+                    <h4 className="text-xl font-semibold mb-3 text-gray-200">Video Portfolio 1</h4>
+                    <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-600 transition-all flex items-center justify-center space-x-2">
+                      <span>Watch Video</span>
+                      <ChevronRight size={20} />
+                    </button>
+                  </div>
                 </div>
-                <div className="px-2">
-                  <h4 className="text-lg font-semibold text-gray-200">Video Portfolio 1</h4>
+              </a>
+
+              <a
+                href="https://youtu.be/lC9hllAodRA?si=rM3wBFAV3_HnOo_7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/30 rounded-2xl overflow-hidden hover-lift cursor-pointer transition-all">
+                  <div className="aspect-video bg-gray-800 flex items-center justify-center relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10"></div>
+                    <Video size={80} className="text-cyan-400 relative z-10" />
+                  </div>
+                  <div className="p-6 bg-gray-800/50">
+                    <h4 className="text-xl font-semibold mb-3 text-gray-200">Video Portfolio 2</h4>
+                    <button className="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all flex items-center justify-center space-x-2">
+                      <span>Watch Video</span>
+                      <ChevronRight size={20} />
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div className="space-y-4">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video">
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded-2xl"
-                    src="https://www.youtube.com/embed/lC9hllAodRA"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-                <div className="px-2">
-                  <h4 className="text-lg font-semibold text-gray-200">Video Portfolio 2</h4>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
