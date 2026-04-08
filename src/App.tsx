@@ -527,7 +527,7 @@ function App() {
                   ></iframe>
                 </div>
                 <div className="px-2">
-                  <h4 className="text-lg font-semibold text-gray-200">Creative Project Showcase</h4>
+                  <h4 className="text-lg font-semibold text-gray-200">Video Portfolio 1</h4>
                 </div>
               </div>
               <div className="space-y-4">
@@ -542,7 +542,7 @@ function App() {
                   ></iframe>
                 </div>
                 <div className="px-2">
-                  <h4 className="text-lg font-semibold text-gray-200">Video Editing Sample</h4>
+                  <h4 className="text-lg font-semibold text-gray-200">Video Portfolio 2</h4>
                 </div>
               </div>
             </div>
